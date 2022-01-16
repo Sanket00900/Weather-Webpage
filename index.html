@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Weather Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><img src="svg1.svg" class="img1"> Weather at Satara, Maharashtra <img src="svg2.svg" class="img2"></h1>
+
+    <div class="card-wrapper">
+        <iframe class="tempc" width="450" height="260" style="border: 1px solid #5a19f3;"
+            src="https://thingspeak.com/channels/1633146/charts/1?bgcolor=%23e4a4c4&color=%23000000&dynamic=true&results=60&title=Temperature+in+C&type=line"></iframe>
+
+        <iframe class="tempf" width="450" height="260" style="border: 1px solid #5a19f3;"
+            src="https://thingspeak.com/channels/1633146/charts/4?bgcolor=%23e4a4c4&color=%23000000&dynamic=true&results=60&title=Temperature+in+F&type=line"></iframe>
+
+        <iframe class="hum" width="450" height="260" style="border: 1px solid #5a19f3;"
+            src="https://thingspeak.com/channels/1633146/charts/2?bgcolor=%23e4a4c4&color=%23000000&dynamic=true&results=60&title=Humidity&type=line"></iframe>
+
+        <iframe class="air" width="450" height="260" style="border: 1px solid #e4a4c4;"
+            src="https://thingspeak.com/channels/1633146/charts/3?bgcolor=%23e4a4c4&color=%23000000&dynamic=true&results=60&title=Air+Quality&type=line"></iframe>
+    </div>
+
+</body>
+
+</html>
